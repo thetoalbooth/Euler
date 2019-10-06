@@ -1,0 +1,12 @@
+def isdiv(x):
+    for num in range(1,21):
+        if x % num !=0:
+            print(str(num) + " is not divisor")
+            return isdiv(x+1)
+        elif (x/num)%2 !=0:
+            print(str(num) + "is not evenly divisor")
+            return isdiv(x+1)
+        else:
+            print(str(num) + ' evenly divides ' + str(x))
+
+isdiv(2520)
