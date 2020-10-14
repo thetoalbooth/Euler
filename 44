@@ -8,3 +8,4 @@ def genPent(n):          # will return n pentagonal numbers
     else:
         pentList.insert(0,((n*(3*n+1))/2))       #this is the formula for a pentagonal number, and we are inserting that at the beginning of our list.  
         return(genPent(n-1))
+
