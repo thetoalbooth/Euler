@@ -1,0 +1,10 @@
+
+pentList = [] # list of n pentagonal numbers as calculated below
+
+def genPent(n):          # will return n pentagonal numbers
+    if n ==1:        # base case
+        pentList.insert(0,1)         # we are inserting the computed value to the beginning of the list 
+        return(pentList)
+    else:
+        pentList.insert(0,((n*(3*n+1))/2))       #this is the formula for a pentagonal number, and we are inserting that at the beginning of our list.  
+        return(genPent(n-1))
